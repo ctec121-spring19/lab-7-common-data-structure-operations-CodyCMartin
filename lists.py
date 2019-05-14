@@ -11,9 +11,17 @@ def main():
     '''
     # create an empty list using the variable name "l1" and print it
 
+    l1 = []
+    print(l1)
+    print()
+
     # create a list with 3 elements using the variable name "l2". The elements
     # should be an int, a float and a string. Print l2
-
+'''
+    l2 =[1,2.0,"hi"]
+    print(l2)
+    print()
+'''
 
     '''
     - element access
@@ -27,8 +35,19 @@ def main():
     # the line should contain the value of the index as well as the element
     # your code below here
 
+    X = len(l2)
+
+    for X in l2:
+        print(l2[0])
+        print(l2[1])
+        print(l2[2])
+
     # repeat the loop but use l2 itself as the sequence. In this case index
     # values will not be available, so just print the elements
+'''
+    for i in l2:
+        print(i)
+'''      
 
     '''
     - element insertion

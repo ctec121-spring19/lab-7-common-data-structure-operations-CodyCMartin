@@ -11,13 +11,21 @@ def main():
     '''
     # create an empty dictionary named "dict" and print it
 
+    dict = {}
+    print(dict)
+
     # open your book to p. 401
     # create the "passwd" dictionary and print it
+
+    passwd = {"guido":"superprogrammer" , "turing": "genius", "bill": "monopoly"}
+    print(passwd)
 
     '''
     - element access
     '''
     # using the square bracket notation print out the value for "turing"
+
+    print(passwd['turing'])
 
     '''
     - element updates

@@ -15,7 +15,14 @@ def main():
     #    least 3 words in it
     # your code below here
 
+
+    s1 = "This is a string"
+    s2 = input("Is this a string?:")
+   
+
     # print both strings
+
+    print(s1,s2)
 
 
     '''
@@ -84,4 +91,4 @@ def main():
     # print l
 
 
-    main()
+main()

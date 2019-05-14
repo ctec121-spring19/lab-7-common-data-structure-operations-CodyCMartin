@@ -17,11 +17,11 @@ def main():
 
     # create a list with 3 elements using the variable name "l2". The elements
     # should be an int, a float and a string. Print l2
-'''
+
     l2 =[1,2.0,"hi"]
     print(l2)
     print()
-'''
+
 
     '''
     - element access
@@ -44,10 +44,10 @@ def main():
 
     # repeat the loop but use l2 itself as the sequence. In this case index
     # values will not be available, so just print the elements
-'''
+
+    
     for i in l2:
-        print(i)
-'''      
+        print(i)      
 
     '''
     - element insertion

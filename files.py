@@ -163,8 +163,9 @@ def main():
 
     # Assigning a variable and opeing the file
     infile = open(fileName)
-    # Assigning a variable to 
+    # Assigning a variable to the handle
     line = infile.readline()
+    # while loop 
     while line != "":
         print(line[:-1])
         line = infile.readline()

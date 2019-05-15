@@ -165,10 +165,12 @@ def main():
     infile = open(fileName)
     # Assigning a variable to the handle
     line = infile.readline()
-    # while loop 
+    # while loop that sets condition for the print 
     while line != "":
         print(line[:-1])
         line = infile.readline()
+
+    # closes the file you opened previously
     infile.close()    
     
 
@@ -177,8 +179,14 @@ def main():
     # sequence in the for loop.
     # your code here
 
+    infile = open(fileName, "r") 
+    for line in infile: 
+        print(line)
+        
+    infile.close() 
 
-'''
+
+    '''
     - element insertion
     - element updates
     '''

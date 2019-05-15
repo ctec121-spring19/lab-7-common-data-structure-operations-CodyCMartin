@@ -7,25 +7,28 @@
 
 def main():
     '''
-    - creation
+    - creating dictionary
     '''
     # create an empty dictionary named "dict" and print it
 
     dict = {}
     print(dict)
+    print()
 
     # open your book to p. 401
     # create the "passwd" dictionary and print it
 
     passwd = {"guido":"superprogrammer" , "turing": "genius", "bill": "monopoly"}
     print(passwd)
+    print()
 
     '''
-    - element access
+    - 
     '''
     # using the square bracket notation print out the value for "turing"
 
     print(passwd['turing'])
+    print()
 
     '''
     - element updates
@@ -36,6 +39,7 @@ def main():
     
     passwd["turing"] = "super genius"
     print(passwd)
+    print()
 
     '''
     - element insertion
@@ -45,10 +49,12 @@ def main():
     # value = "new key value"
 
     passwd.update({"new key" : "new key value"})
+    print()
 
     # print passwd
 
     print(passwd)
+    print()
 
     '''
     - element deletion
@@ -56,6 +62,7 @@ def main():
     # delete "turing" from passwd and print passwd
 
     del passwd["turing"]
+    print()
     
 
     '''
@@ -64,11 +71,13 @@ def main():
     # print the result of get("turing")
 
     print(passwd.get("turing"))
+    print()
 
     # Use the "in" keyword to search the dictionary
     # print the value returned by ' "turing" in passwd '
 
     print("turing" in passwd)
+    print()
 
     '''
     - some dictionary methods
@@ -76,14 +85,17 @@ def main():
     # print the list of keys
 
     print(passwd.keys())
+    print()
 
     # print the list of values
 
     print(passwd.values())
+    print()
 
     # print the list of items - key-value pairs
 
     print(passwd.items())
+    print()
 
     '''
     - deletion
@@ -92,5 +104,6 @@ def main():
 
     passwd.clear()
     print(passwd)
+    print()
 
 main()

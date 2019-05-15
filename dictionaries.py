@@ -33,6 +33,10 @@ def main():
     # using the square bracket notation update the value for "turing" 
     # to "super genius", then print the dictionary
 
+    
+    passwd["turing"] = "super genius"
+    print(passwd)
+
     '''
     - element insertion
     '''
@@ -40,33 +44,53 @@ def main():
     # key = "new key"
     # value = "new key value"
 
+    passwd.update({"new key" : "new key value"})
+
     # print passwd
+
+    print(passwd)
 
     '''
     - element deletion
     '''
     # delete "turing" from passwd and print passwd
 
+    del passwd["turing"]
+    
+
     '''
     - search
     '''
     # print the result of get("turing")
 
+    print(passwd.get("turing"))
+
     # Use the "in" keyword to search the dictionary
     # print the value returned by ' "turing" in passwd '
+
+    print("turing" in passwd)
 
     '''
     - some dictionary methods
     '''
     # print the list of keys
 
+    print(passwd.keys())
+
     # print the list of values
 
+    print(passwd.values())
+
     # print the list of items - key-value pairs
+
+    print(passwd.items())
 
     '''
     - deletion
     '''
     # delete all entries from passwd, then print it
+
+    passwd.clear()
+    print(passwd)
 
 main()

@@ -35,19 +35,21 @@ def main():
     # the line should contain the value of the index as well as the element
     # your code below here
 
-    X = len(l2)
 
-    for X in l2:
+    for i in range(1):
         print(l2[0])
         print(l2[1])
         print(l2[2])
+        print()
+
 
     # repeat the loop but use l2 itself as the sequence. In this case index
     # values will not be available, so just print the elements
 
-    
-    for i in l2:
-        print(i)      
+    for i in range(1):
+        print(l2)
+        print()
+      
 
     '''
     - element insertion
@@ -55,20 +57,37 @@ def main():
     # mutable sequences like lists have two mechanisms to insert a new value.
     # use append() to add a new element to the end of l2 and print l2
 
+    l2.append("apple")
+    
+
     # use insert to add a new element at the beginning of l2 and print l2.
+
+    l2.insert(0,"tv")
+    print(l2)
+    print()
+  
+
 
     '''
     - element updates
     '''
     # use indexing and assignment to change the second element of l2 to 999
 
-    # print l2
+    l2[1] = 999
 
+
+    # print l2
+    print(l2)
+    print()
 
     '''
     - element deletion
     '''
     # delete item 4 from l2 and print l2
+
+    del l2[4]
+    print(l2)
+    print()
 
 
     '''
@@ -78,7 +97,14 @@ def main():
     l = ['a', 'e', 'i', 'o', 'u']
     # use the index() method to find the index of 'i'
 
+    x = l.index('i')
+   
+
     # print the index
+
+    print(x)
+    print()
+
 
 
     '''
@@ -91,6 +117,12 @@ def main():
     l = [-3, 99, 0, -451, 1234]
     # sort the list and print it
 
+    l.sort()
+    print(l)
+
     # sort in the reverse order and print it
+
+    l.reverse()
+    print(l)
 
 main()

@@ -193,8 +193,13 @@ def main():
     # these are really just writing to a file.
     # open "mydata.txt" for writing using the file handle "outfile"
 
+    outfile = open('mydata.txt',"w")
+
     # Write several lines of gibberish to the file and close it.
 
+    outfile.write("hello hi world hi" + '\n' "hi again" + '\n')
+
+    outfile.close()
     # view the new file in a text editor to verify that the program worked.
 
 

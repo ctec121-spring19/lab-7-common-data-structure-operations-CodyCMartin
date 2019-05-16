@@ -17,12 +17,14 @@ def main():
 
 
     s1 = "This is a string"
-    s2 = input("Is this a string?:")
+    s2 = input("Is this a string?: ")
+    
    
 
     # print both strings
 
     print(s1,s2)
+    print()
 
 
     '''
@@ -38,6 +40,16 @@ def main():
     # the output line should contain the value of the index as well as 
     # the character
     # your code below here
+
+    
+
+    for letter in s1:
+        print(letter)
+
+    for i in range(1, len(s1), 3):
+        print(s1[i])
+
+    
 
 
     '''
@@ -55,6 +67,13 @@ def main():
 
     # form a new string named "snew" using concatenation and print snew.
 
+    a = s1[0:4]
+    b = s1[9:16]
+    c = " be a"
+
+    snew = a + c + b
+    print(snew)
+
 
     '''
     - element deletion
@@ -68,9 +87,17 @@ def main():
 
     # use the find() method to find the word after the one you are deleting.
 
+    x = snew.find(" be")
+    
+
     # use the indexes to form two slices
 
+    slice1 = snew[0:4]
+    slice2 = snew[9:16]
+
     # use concatenation to form snew and print it
+    snew = slice1 + slice2
+    print(snew)
 
 
     '''
@@ -80,6 +107,9 @@ def main():
     # so common Python has a method for it. Use the replace() method to 
     # replace a word in s1. Assign the new string to snew and print it.
 
+    snew = snew.replace("string", "apple")
+    print(snew)
+
 
     '''
     Last item
@@ -88,7 +118,10 @@ def main():
     # to the next program file "lists.py"
     # Set variable named "l" to s1.split()
 
-    # print l
+    l = s1.split()
 
+
+    # print l
+    print(l)
 
 main()
